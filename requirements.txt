@@ -9,3 +9,4 @@ langchain-groq==0.2.4
 python-dotenv==1.0.1
 pydantic==2.10.6
 pydantic_core==2.27.2
+uvicorn[standard]
