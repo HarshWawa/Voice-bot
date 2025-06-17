@@ -16,6 +16,8 @@ load_dotenv()
 app = FastAPI()
 
 # app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="public"), name="static")
+
 templates = Jinja2Templates(directory="templates")
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
